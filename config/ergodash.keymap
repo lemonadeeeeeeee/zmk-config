@@ -15,7 +15,7 @@
 #define RAISE   2
 
 
-#include "mouse.dtsi"
+
 
 
 / {
@@ -105,8 +105,8 @@
  *//* FIXME boot and reset are not yet locale aware */
             bindings = <
 &kp MINUS  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none   &bt BT_CLR                         &none  &none   &none  &none        &none   &none   &none
-    &none         &none         &kp W         &kp E         &kp R  &none        &none                         &none  &kp A   &none   U_MS_U         &none   &none   &none
-    &none         &none         &kp S         &kp D         &kp F  &none  &kp PAGE_UP                 &kp PAGE_DOWN  &none   U_MS_L U_MS_D        &mmv MOVE_RIGHT   &none   &none
+    &none         &none         &kp W         &kp E         &kp R  &none        &none                         &none  &kp A   &none   &mmv MOVE_UP         &none   &none   &none
+    &none         &none         &kp S         &kp D         &kp F  &none  &kp PAGE_UP                 &kp PAGE_DOWN  &none   &mmv MOVE_LEFT &mmv MOVE_DOWN       &mmv MOVE_RIGHT   &none   &none
    &trans         &none         &none         &none         &none  &none                &none  &none                 &none   &none  &none  &bootloader  &reset  &trans
    &trans         &none         &none        &trans        &trans               &none  &trans  &none      &kp SPACE         &trans  &none        &none   &none  &trans
             >;
