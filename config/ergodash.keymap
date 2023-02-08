@@ -100,8 +100,8 @@
  *//* FIXME boot and reset are not yet locale aware */
             bindings = <
 &kp MINUS  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none   &bt BT_CLR                         &none  &none   &none  &none        &none   &none   &none
-    &none         &none         &kp W         &kp E         &kp R  &none        &none                         &none  &kp A   &none    &kp        &none   &none   &none
-    &none         &none         &kp S         &kp D         &kp F  &none  &kp PAGE_UP                 &kp PAGE_DOWN  &none     &kp    &kp          &kp   &none   &none
+    &none         &none         &kp W         &kp E         &kp R  &none        &none                         &none  &kp A   &none  &kp W        &none   &none   &none
+    &none         &none         &kp S         &kp D         &kp F  &none  &kp PAGE_UP                 &kp PAGE_DOWN  &none   &kp A  &kp S        &kp D   &none   &none
    &trans         &none         &none         &none         &none  &none                &none  &none                 &none   &none  &none  &bootloader  &reset  &trans
    &trans         &none         &none        &trans        &trans               &none  &trans  &none      &kp SPACE         &trans  &none        &none   &none  &trans
             >;
