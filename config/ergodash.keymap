@@ -40,6 +40,16 @@
                 <&macro_release>,
                 <&kp LCTRL &kp LEFT_SHIFT &kp ESC>;
         };
+        reopen: reopen {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT &kp T>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT &kp T>;
+        };
     };
 
     keymap {
