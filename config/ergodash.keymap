@@ -15,36 +15,6 @@
     };
 
     macros {
-        start: start {
-            compatible = "zmk,behavior-macro";
-            label = "start";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp SPACE &kp LCTRL>,
-                <&macro_release>,
-                <&kp SPACE &kp LCTRL>;
-        };
-        ctrShiftEsc: ctrShiftEsc {
-            compatible = "zmk,behavior-macro";
-            label = "ctrShiftEsc";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp ESC>,
-                <&macro_release>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp ESC>;
-        };
-        reopen: reopen {
-            compatible = "zmk,behavior-macro";
-            label = "reopen";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp T>,
-                <&macro_release>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp T>;
-        };
     };
 
     keymap {
