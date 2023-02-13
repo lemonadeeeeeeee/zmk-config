@@ -23,7 +23,7 @@ combos {
 macros {
     cons: cons {
         compatible = "zmk,behavior-macro";
-        label = "new_macro";
+        label = "cons";
         #binding-cells = <0>;
         bindings =
             <&macro_press>,
@@ -33,7 +33,7 @@ macros {
     };
     ctrlShiftT: ctrlShiftT {
         compatible = "zmk,behavior-macro";
-        label = "new_macro";
+        label = "ctrlShiftT";
         #binding-cells = <0>;
         bindings =
             <&macro_press>,
@@ -43,7 +43,7 @@ macros {
     };
     ctrlShiftEsc: ctrlShiftEsc {
         compatible = "zmk,behavior-macro";
-        label = "new_macro";
+        label = "ctrlShiftEsc";
         #binding-cells = <0>;
         bindings =
             <&macro_press>,
