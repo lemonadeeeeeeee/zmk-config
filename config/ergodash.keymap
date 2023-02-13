@@ -19,32 +19,22 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp SPACE &kp LEFT_ALT>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_ALT>;
+            bindings = <&macro_press>,<&kp SPACE &kp LEFT_ALT>,<&macro_release>,<&kp SPACE &kp LEFT_ALT>;
         };
         ctrlShiftT: ctrlShiftT {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp T>,
-                <&macro_release>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp T>;
+            bindings = <&macro_press>,<&kp LCTRL &kp LEFT_SHIFT &kp T>,<&macro_release>,<&kp LCTRL &kp LEFT_SHIFT &kp T>;
         };
           ctrlShiftEsc: ctrlShiftEsc {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp Esc>,
-                <&macro_release>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp Esc>;
-    keymap {
+            bindings = <&macro_press>,<&kp LCTRL &kp LEFT_SHIFT &kp ESC>,<&macro_release>,<&kp LCTRL &kp LEFT_SHIFT &kp ESC>;
+    
+macros {};
+keymap {
         compatible = "zmk,keymap";
 
         default_layer {
