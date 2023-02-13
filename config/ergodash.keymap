@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/bt.h>
 
+&lt { quick_tap_ms = <200>; };
+&mt { quick_tap_ms = <200>; };
+f
 / {
     combos {
         compatible = "zmk,combos";
