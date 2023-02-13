@@ -20,11 +20,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        new_combo {
-            bindings = <&trans>;
-            key-positions = <0>;
-        };
     };
 
     macros {
