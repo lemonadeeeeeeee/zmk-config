@@ -46,7 +46,7 @@
                 <&kp LCTRL &kp LEFT_SHIFT &kp ESC>;
         };
     };
-};
+
 
 keymap {
     compatible = "zmk,keymap";
