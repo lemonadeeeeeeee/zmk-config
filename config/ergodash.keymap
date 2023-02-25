@@ -30,9 +30,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp SPACE &kp LCTRL>,
+                <&kp LCTRL &kp SPACE>,
                 <&macro_release>,
-                <&kp SPACE &kp LCTRL>;
+                <&kp LCTRL &kp SPACE>;
         };
         ctrlShiftT: ctrlShiftT {
             compatible = "zmk,behavior-macro";
