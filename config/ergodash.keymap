@@ -136,5 +136,15 @@
         &trans         &none             &none            &trans             &trans               &none  &trans  &none      &kp SPACE                 &trans           &none            &none   &none           &trans
             >;
         };
+
+        num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans        &kp     &kp     &kp     &kp
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans        &kp     &kp     &kp     &kp
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans          &trans  &trans  &kp KP_N1     &kp     &kp     &kp
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans        &kp     &kp     &kp     &kp
+            >;
+        };
     };
 };
