@@ -21,6 +21,11 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        sqt {
+            bindings = <&kp SQT>;
+            key-positions = <39 40>;
+        };
     };
 
     macros {
