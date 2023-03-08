@@ -26,6 +26,11 @@
             bindings = <&kp SQT>;
             key-positions = <39 40>;
         };
+
+        new_combo {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <25 26>;
+        };
     };
 
     macros {
