@@ -6,7 +6,6 @@
 #define NUM     3
 #define GAYMING 4
 
-gayming
 
 #include "mouse.dtsi"
 #include <dt-bindings/zmk/keys.h>
