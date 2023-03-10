@@ -24,26 +24,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        sqt {
-            bindings = <&kp SQT>;
-            key-positions = <39 40>;
-        };
-
-        leftbracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <25 26>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <32 31>;
-        };
-
-        rightbracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <40 26>;
-        };
     };
 
     macros {
@@ -108,11 +88,11 @@
  */
 
             bindings = <
-  &kp ESC      &kp N1      &kp N2       &kp N3       &kp N4  &kp N5  &kp MINUS                            &kp EQUAL  &kp N6       &kp N7             &kp N8      &kp N9             &kp N0  &kp RIGHT_BRACKET
-  &kp TAB       &kp Q       &kp W        &kp E        &kp R   &kp T  &kp GRAVE                        &kp BACKSLASH   &kp Y        &kp U              &kp I       &kp O              &kp P   &kp LEFT_BRACKET
-&kp LCTRL  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F   &kp G   &kp HOME                              &kp END   &kp H  &mt RSHFT J        &mt RCTRL K  &mt RALT L       &mt RGUI SQT            &kp SQT
-&kp LSHFT       &kp Z       &kp X        &kp C        &kp V   &kp B                   &kp DEL  &cons                  &kp N        &kp M          &kp COMMA     &kp DOT          &kp SLASH          &kp RSHFT
-  &kp INS   &kp K_APP    &kp CAPS     &kp LALT        &mo 1          &kp SPACE  &kp BACKSPACE  &lang      &kp ENTER                &mo 2  &lt 3 PRINTSCREEN    &kp LALT  &kp RIGHT_COMMAND          &kp RCTRL
+  &kp ESC      &kp N1      &kp N2       &kp N3       &kp N4  &kp N5  &kp MINUS                            &kp EQUAL  &kp N6       &kp N7             &kp N8      &kp N9              &kp N0  &kp RIGHT_BRACKET
+  &kp TAB       &kp Q       &kp W        &kp E        &kp R   &kp T  &kp GRAVE                        &kp BACKSLASH   &kp Y        &kp U              &kp I       &kp O               &kp P   &kp LEFT_BRACKET
+&kp LCTRL  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F   &kp G   &kp HOME                              &kp END   &kp H  &mt RSHFT J        &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON            &kp SQT
+&kp LSHFT       &kp Z       &kp X        &kp C        &kp V   &kp B                   &kp DEL  &cons                  &kp N        &kp M          &kp COMMA     &kp DOT           &kp SLASH          &kp RSHFT
+  &kp INS   &kp K_APP    &kp CAPS     &kp LALT        &mo 1          &kp SPACE  &kp BACKSPACE  &lang      &kp ENTER                &mo 2  &lt 3 PRINTSCREEN    &kp LALT   &kp RIGHT_COMMAND          &kp RCTRL
             >;
         };
 
