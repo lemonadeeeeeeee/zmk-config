@@ -23,6 +23,17 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        mmmm {
+            bindings = <&kp M>;
+            key-positions = <43 44 45>;
+            layers = <3>;
+        };
+
+        space_main {
+            bindings = <&kp SPACE>;
+            key-positions = <29 30 31 32>;
+        };
     };
 
     macros {
