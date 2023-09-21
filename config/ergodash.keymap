@@ -156,11 +156,11 @@
 
         gayming_layer {
             bindings = <
-&kp F1        &kp F2        &kp F3  &kp F4        &kp F5        &kp F6        &kp F7                          &none  &none  &none  &none  &none  &none  &none
-&kp NUMBER_1  &kp NUMBER_2  &kp W   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7                    &none  &none  &none  &none  &none  &none  &none
-&none         &kp A         &kp S   &none         &none         &none         &to 0                           &none  &none  &none  &none  &none  &none  &none
-&none         &none         &none   &kp V         &none         &none                       &none      &none         &none  &none  &none  &none  &none  &none
-&none         &none         &none   &none         &mo 1                       &kp LCTRL     &kp LCTRL  &none  &none         &none  &none  &none  &none  &none
+&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &none                        &none  &none  &none  &none  &none  &none  &none
+&kp TAB     &none         &kp W         &kp E         &kp R         &none   &none                        &none  &none  &none  &none  &none  &none  &none
+&kp CLCK    &kp A         &kp S         &kp D         &none         &kp G   &to 0                        &none  &none  &none  &none  &none  &none  &none
+&none       &none         &none         &kp V         &none         &kp B              &none      &none         &none  &none  &none  &none  &none  &none
+&none       &none         &none         &kp LEFT_ALT  &mo 1                 &kp LCTRL  &kp LCTRL  &none  &none         &none  &none  &none  &none  &none
             >;
         };
     };
