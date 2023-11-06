@@ -28,6 +28,42 @@
             bindings = <&kp SPACE>;
             key-positions = <29 30 31 32>;
         };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <42 43>;
+            layers = <5>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <43 44>;
+            layers = <5>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <44 45>;
+            layers = <5>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <45 46>;
+            layers = <5>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <42 44>;
+            layers = <5>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <46 47>;
+            layers = <5>;
+        };
     };
 
     macros {
@@ -166,11 +202,11 @@
 
         num {
             bindings = <
-&trans        &trans        &trans        &trans        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp N7        &kp N8        &kp N9        &kp N0        &kp MINUS     &kp EQUAL     &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp F1        &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                &trans  &trans          &trans  &trans  &trans  &trans  &trans  &kp RSHFT
-&trans        &trans        &trans        &trans        &trans                      &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans     &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp N7        &kp N8        &kp N9        &kp N0        &kp MINUS  &kp EQUAL     &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5     &kp F6                &trans  &trans          &trans  &trans  &trans  &trans  &trans  &kp RSHFT
+&trans        &trans        &trans        &trans        &trans                   &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
