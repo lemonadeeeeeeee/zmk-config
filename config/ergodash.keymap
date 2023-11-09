@@ -28,6 +28,42 @@
             bindings = <&kp SPACE>;
             key-positions = <29 30 31 32>;
         };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <42 43>;
+            layers = <5>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <43 44>;
+            layers = <5>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <44 45>;
+            layers = <5>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <45 46>;
+            layers = <5>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <42 44>;
+            layers = <5>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <46 47>;
+            layers = <5>;
+        };
     };
 
     macros {
