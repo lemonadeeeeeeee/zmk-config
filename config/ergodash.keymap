@@ -268,7 +268,7 @@
         gayming_layer {
             bindings = <
 &kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &none                        &none  &none  &none  &none  &none  &none  &none
-&kp TAB     &none         &kp W         &kp E         &kp R         &none   &none                        &none  &none  &none  &none  &none  &none  &none
+&kp TAB     &none         &kp W         &kp E         &kp R         &none   &none                        &none  &none  &none  &none  &kp D  &none  &none
 &kp CLCK    &kp A         &kp S         &kp D         &none         &kp G   &to 0                        &none  &none  &none  &none  &none  &none  &none
 &none       &none         &none         &kp V         &none         &kp B              &none      &none         &none  &none  &none  &none  &none  &none
 &none       &none         &none         &kp LEFT_ALT  &mo 1                 &kp LCTRL  &kp LCTRL  &none  &none         &none  &none  &none  &none  &none
