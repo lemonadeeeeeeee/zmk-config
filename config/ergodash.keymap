@@ -66,7 +66,7 @@
         };
 
         dot {
-            bindings = <&kp PERIOD>;
+            bindings = <&kp KP_DOT>;
             key-positions = <39 40>;
         };
 
@@ -103,6 +103,21 @@
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <22 23>;
+        };
+
+        volup {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <14 15>;
+        };
+
+        voldown {
+            bindings = <&kp C_VOL_DN>;
+            key-positions = <28 29>;
+        };
+
+        mute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <14 28>;
         };
     };
 
