@@ -65,16 +65,9 @@
             layers = <5>;
         };
 
-        m {
-            bindings = <&none>;
-            key-positions = <28 29 30>;
-            layers = <6>;
-        };
-
-        n {
-            bindings = <&none>;
-            key-positions = <28 29>;
-            layers = <6>;
+        dot {
+            bindings = <&kp PERIOD>;
+            key-positions = <39 40>;
         };
     };
 
