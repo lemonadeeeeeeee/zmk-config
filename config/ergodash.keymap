@@ -134,7 +134,7 @@
             key-positions = <42 29>;
         };
 
-        space1 {
+        tab_left {
             bindings = <&kp SPACE>;
             key-positions = <32 31>;
         };
