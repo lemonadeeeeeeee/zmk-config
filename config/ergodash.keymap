@@ -32,37 +32,31 @@
         f7 {
             bindings = <&kp F7>;
             key-positions = <42 43>;
-            layers = <5>;
         };
 
         f8 {
             bindings = <&kp F8>;
             key-positions = <43 44>;
-            layers = <5>;
         };
 
         f9 {
             bindings = <&kp F9>;
             key-positions = <44 45>;
-            layers = <5>;
         };
 
         f10 {
             bindings = <&kp F10>;
             key-positions = <45 46>;
-            layers = <5>;
         };
 
         f12 {
             bindings = <&kp F12>;
             key-positions = <42 44>;
-            layers = <5>;
         };
 
         f11 {
             bindings = <&kp F11>;
             key-positions = <46 47>;
-            layers = <5>;
         };
 
         dot {
@@ -139,6 +133,21 @@
             bindings = <&kp C_PREV>;
             key-positions = <42 29>;
         };
+
+        space1 {
+            bindings = <&kp SPACE>;
+            key-positions = <32 31>;
+        };
+
+        space2 {
+            bindings = <&kp SPACE>;
+            key-positions = <32 30>;
+        };
+
+        function_row {
+            bindings = <&mo 3>;
+            key-positions = <60 61>;
+        };
     };
 
     macros {
@@ -207,7 +216,7 @@
 &kp LWIN   &kp Q      &kp W     &kp E     &kp R   &kp T   &kp GRAVE                     &kp BACKSLASH  &kp Y   &kp U   &kp I              &kp O     &kp P              &kp LEFT_BRACKET
 &kp LCTRL  &kp A      &kp S     &kp D     &kp F   &kp G   &kp HOME                      &kp END        &kp H   &kp J   &kp K              &kp L     &kp SEMICOLON      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V   &kp B                &kp DEL   &cons                 &kp N   &kp M   &kp COMMA          &kp DOT   &kp SLASH          &kp RSHFT
-&kp INS    &kp K_APP  &kp CAPS  &kp LALT  &mo 1           &lt 5 SPACE  &kp BSPC  &lang  &kp ENTER              &mo 2   &lt 3 PRINTSCREEN  &kp LALT  &kp RIGHT_COMMAND  &kp RCTRL
+&kp INS    &kp K_APP  &kp CAPS  &kp LALT  &mo 1           &lt 0 SPACE  &kp BSPC  &lang  &kp ENTER              &mo 2   &lt 3 PRINTSCREEN  &kp LALT  &kp RIGHT_COMMAND  &kp RCTRL
             >;
         };
 
@@ -225,15 +234,15 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  *//* FIXME boot and reset are not yet locale aware */
             bindings = <
-&kp ESC         &kp F1            &kp F2          &kp F3          &kp F4           &kp F5  &kp F12                                &kp F11        &kp F6  &kp F7         &kp F8                &kp F9                 &kp F10  &none
-&kp LEFT_WIN    &none             &none           &kp UP_ARROW    &none            &none   &ctrlShiftT                            &trans         &none   &none          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &kp RIGHT_BRACKET
-&kp LCTRL       &none             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &kp PAGE_UP                            &kp PAGE_DOWN  &none   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &kp APOSTROPHE
-&kp LEFT_SHIFT  &none             &none           &none           &none            &to 4                &ext_power EP_ON   &none                 &none   &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &kp RIGHT_SHIFT
-&ctrlShiftEsc   &kp LEFT_COMMAND  &trans          &kp LEFT_ALT    &mo 1                    &kp ENTER    &ext_power EP_OFF  &none  &trans                 &trans         &none                 &kp RIGHT_ALT          &none    &kp RCTRL
+&kp ESC         &kp F1            &kp F2        &kp F3        &kp F4        &kp F5  &kp F12                                &kp F11        &kp F6  &kp F7         &kp F8                &kp F9                 &kp F10  &none
+&kp LEFT_WIN    &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &ctrlShiftT                            &trans         &none   &none          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &kp RIGHT_BRACKET
+&kp LCTRL       &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &none   &kp PAGE_UP                            &kp PAGE_DOWN  &none   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &kp APOSTROPHE
+&kp LEFT_SHIFT  &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &to 4                &ext_power EP_ON   &none                 &none   &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &kp RIGHT_SHIFT
+&ctrlShiftEsc   &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                 &kp ENTER    &ext_power EP_OFF  &none  &trans                 &trans         &none                 &kp RIGHT_ALT          &none    &kp RCTRL
             >;
         };
 
-        raise_layer {
+        mouse_layer {
             /* .----------------------------------------------------------------------------------------------------------------------.
  * |      | BT 0 | BT 1 | BT 2 | BT 3 |      | BTCL |                    |      |      |      |      |      |      |      |
  * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
@@ -257,11 +266,11 @@
 
         num_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp KP_NLCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp KP_N7    &kp KP_N8      &kp KP_N9        &kp KP_MINUS
-&trans  &kp S   &kp T   &kp R   &kp A   &trans  &trans                  &trans  &trans  &trans  &kp KP_N4    &kp KP_N5      &kp KP_N6        &kp KP_PLUS
-&trans  &kp O   &kp I   &kp Y   &kp E   &trans          &trans  &trans          &trans  &trans  &kp KP_N1    &kp KP_N2      &kp KP_N3        &kp KP_EQUAL
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &none        &kp KP_N0      &kp KP_DOT       &kp KP_ENTER
+&trans  &trans  &trans  &trans   &trans   &trans  &trans                  &trans  &trans  &trans  &kp KP_NLCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
+&trans  &kp F1  &kp F2  &kp F3   &kp F4   &trans  &trans                  &trans  &trans  &trans  &kp KP_N7    &kp KP_N8      &kp KP_N9        &kp KP_MINUS
+&trans  &kp F4  &kp F5  &kp F6   &kp F7   &trans  &trans                  &trans  &trans  &trans  &kp KP_N4    &kp KP_N5      &kp KP_N6        &kp KP_PLUS
+&trans  &kp F8  &kp F9  &kp F11  &kp F12  &trans          &trans  &trans          &trans  &trans  &kp KP_N1    &kp KP_N2      &kp KP_N3        &kp KP_EQUAL
+&trans  &trans  &trans  &trans   &trans           &trans  &trans  &trans  &trans          &trans  &none        &kp KP_N0      &kp KP_DOT       &kp KP_ENTER
             >;
         };
 
@@ -272,16 +281,6 @@
 &kp CLCK    &kp A         &kp S         &kp D         &none         &kp G   &to 0                        &none  &none  &none  &none  &none  &none  &none
 &none       &none         &none         &kp V         &none         &kp B              &none      &none         &none  &none  &none  &none  &none  &none
 &none       &none         &none         &kp LEFT_ALT  &mo 1                 &kp LCTRL  &kp LCTRL  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        num {
-            bindings = <
-&trans        &trans        &trans        &trans        &trans     &trans        &trans                  &trans  &trans  &trans  &trans  &trans        &trans     &trans
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &trans                  &trans  &trans  &trans  &trans  &trans        &trans     &trans
-&kp N7        &kp N8        &kp N9        &kp N0        &kp MINUS  &kp EQUAL     &trans                  &trans  &trans  &trans  &trans  &trans        &trans     &trans
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5     &kp F6                &trans  &trans          &trans  &trans  &trans  &kp LEFT_ALT  &kp LCTRL  &kp RSHFT
-&trans        &trans        &trans        &kp LALT      &trans                   &trans  &trans  &trans  &trans          &trans  &trans  &trans        &trans     &trans
             >;
         };
     };
