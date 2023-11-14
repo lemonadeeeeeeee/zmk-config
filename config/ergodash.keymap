@@ -170,7 +170,7 @@
         };
 
         question_mark {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp QMARK>;
             key-positions = <37 38 25>;
         };
     };
