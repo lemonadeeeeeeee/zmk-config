@@ -186,22 +186,22 @@
 
         up_arrow {
             bindings = <&kp UP_ARROW>;
-            key-positions = <17 32 17>;
+            key-positions = <17 17 31>;
         };
 
         down_arrow {
             bindings = <&kp DOWN_ARROW>;
-            key-positions = <17 30>;
+            key-positions = <45 31>;
         };
 
         left_arrow {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <30 31>;
+            key-positions = <30 17>;
         };
 
         right_arrow {
             bindings = <&kp RIGHT_ARROW>;
-            key-positions = <32 31>;
+            key-positions = <32 17>;
         };
 
         right_ctrl_left {
@@ -307,9 +307,9 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_NUMBER_6>,
+                <&kp KP_NUMBER_3>,
                 <&macro_release>,
-                <&kp KP_NUMBER_6>,
+                <&kp KP_NUMBER_3>,
                 <&macro_press>,
                 <&kp KP_NUMBER_3>,
                 <&macro_release>,
