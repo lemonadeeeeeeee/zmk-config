@@ -242,6 +242,17 @@
                 <&macro_release>,
                 <&kp LEFT_WIN &kp SPACE>;
         };
+
+        altTab: altTab {
+            compatible = "zmk,behavior-macro";
+            label = "ALTTAB";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp TAB>;
+        };
     };
 
     keymap {
@@ -263,11 +274,11 @@
  */
 
             bindings = <
-&none         &kp N1     &kp N2  &kp N3  &kp N4        &kp N5  &kp MINUS                                      &kp EQUAL      &kp N6  &kp N7  &kp N8             &kp N9    &kp N0             &kp RIGHT_BRACKET
-&kp LWIN      &kp Q      &kp W   &kp E   &kp R         &kp T   &kp GRAVE                                      &kp BACKSLASH  &kp Y   &kp U   &kp I              &kp O     &kp P              &kp LEFT_BRACKET
-&kp LCTRL     &kp A      &kp S   &kp D   &kp F         &kp G   &kp HOME                                       &kp END        &kp H   &kp J   &kp K              &kp L     &kp SEMICOLON      &kp SQT
-&kp LEFT_ALT  &kp Z      &kp X   &kp C   &kp V         &kp B                   &none           &cons                         &kp N   &kp M   &kp COMMA          &kp DOT   &kp SLASH          &kp RSHFT
-&kp INS       &kp K_APP  &none   &mo 4   &lt 1 ESCAPE          &lt 3 CAPSLOCK  &kp LEFT_SHIFT  &kp BACKSPACE  &kp SPACE              &mo 2   &lt 3 PRINTSCREEN  &kp LALT  &kp RIGHT_COMMAND  &kp RCTRL
+&none         &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &kp MINUS                                      &kp EQUAL      &kp N6  &kp N7  &kp N8             &kp N9    &kp N0             &kp RIGHT_BRACKET
+&kp LWIN      &kp Q      &kp W   &kp E   &kp R   &kp T   &kp GRAVE                                      &kp BACKSLASH  &kp Y   &kp U   &kp I              &kp O     &kp P              &kp LEFT_BRACKET
+&kp LCTRL     &kp A      &kp S   &kp D   &kp F   &kp G   &kp HOME                                       &kp END        &kp H   &kp J   &kp K              &kp L     &kp SEMICOLON      &kp SQT
+&kp LEFT_ALT  &kp Z      &kp X   &kp C   &kp V   &kp B                   &none           &cons                         &kp N   &kp M   &kp COMMA          &kp DOT   &kp SLASH          &kp RSHFT
+&kp INS       &kp K_APP  &none   &mo 4   &mo 1           &lt 3 CAPSLOCK  &kp LEFT_SHIFT  &kp BACKSPACE  &kp SPACE              &mo 2   &lt 3 PRINTSCREEN  &kp LALT  &kp RIGHT_COMMAND  &kp RCTRL
             >;
         };
 
@@ -317,11 +328,11 @@
 
         num_layer {
             bindings = <
-&trans        &trans  &trans  &trans   &trans   &trans  &trans                  &trans  &trans  &trans  &kp KP_NLCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
-&trans        &kp F1  &kp F2  &kp F3   &kp F4   &trans  &trans                  &trans  &trans  &trans  &kp KP_N7    &kp KP_N8      &kp KP_N9        &kp KP_MINUS
-&kp LCTRL     &kp F4  &kp F5  &kp F6   &kp F7   &trans  &trans                  &trans  &trans  &trans  &kp KP_N4    &kp KP_N5      &kp KP_N6        &kp KP_PLUS
-&kp LEFT_ALT  &kp F8  &kp F9  &kp F11  &kp F12  &trans          &trans  &trans          &trans  &trans  &kp KP_N1    &kp KP_N2      &kp KP_N3        &kp KP_EQUAL
-&trans        &trans  &trans  &trans   &trans           &trans  &trans  &trans  &trans          &trans  &none        &kp KP_N0      &kp KP_DOT       &kp KP_ENTER
+&trans        &trans  &trans  &trans   &trans   &trans   &trans                  &trans  &trans  &trans  &kp KP_NLCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
+&kp LEFT_WIN  &kp F1  &kp F2  &kp F3   &kp F4   &altTab  &trans                  &trans  &trans  &trans  &kp KP_N7    &kp KP_N8      &kp KP_N9        &kp KP_MINUS
+&kp LCTRL     &kp F4  &kp F5  &kp F6   &kp F7   &trans   &trans                  &trans  &trans  &trans  &kp KP_N4    &kp KP_N5      &kp KP_N6        &kp KP_PLUS
+&kp LEFT_ALT  &kp F8  &kp F9  &kp F11  &kp F12  &trans           &trans  &trans          &trans  &trans  &kp KP_N1    &kp KP_N2      &kp KP_N3        &kp KP_EQUAL
+&trans        &trans  &trans  &trans   &trans            &trans  &trans  &trans  &trans          &trans  &none        &kp KP_N0      &kp KP_DOT       &kp KP_ENTER
             >;
         };
 
