@@ -81,7 +81,7 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <37 38>;
+            key-positions = <37 36>;
         };
 
         plus {
@@ -262,11 +262,11 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  *//* FIXME boot and reset are not yet locale aware */
             bindings = <
-&kp ESC         &kp F1            &kp F2        &kp F3        &kp F4        &kp F5  &kp F12                                     &kp F11        &kp F6  &kp F7         &kp F8                &kp F9                 &kp F10  &none
-&kp LEFT_WIN    &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &ctrlShiftT                                 &trans         &none   &none          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &kp RIGHT_BRACKET
-&kp LCTRL       &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &none   &kp PAGE_UP                                 &kp PAGE_DOWN  &none   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &kp APOSTROPHE
-&kp LEFT_SHIFT  &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &none                &ext_power EP_ON   &none                      &none   &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &kp RIGHT_SHIFT
-&ctrlShiftEsc   &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                 &kp ENTER    &ext_power EP_OFF  &kp DELETE  &trans                 &trans         &none                 &kp RIGHT_ALT          &none    &kp RCTRL
+&kp ESC        &kp F1            &kp F2        &kp F3        &kp F4        &kp F5  &kp F12                                     &kp F11        &kp F6      &kp F7         &kp F8                &kp F9                 &kp F10  &none
+&kp LEFT_WIN   &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &ctrlShiftT                                 &trans         &kp POUND   &kp EXCL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &kp RIGHT_BRACKET
+&kp LCTRL      &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &none   &kp PAGE_UP                                 &kp PAGE_DOWN  &kp DOLLAR  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none
+&kp LEFT_ALT   &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &none                &ext_power EP_ON   &none                      &none       &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &kp RIGHT_SHIFT
+&ctrlShiftEsc  &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                 &kp ENTER    &ext_power EP_OFF  &kp DELETE  &trans                     &trans         &none                 &kp RIGHT_ALT          &none    &kp RCTRL
             >;
         };
 
