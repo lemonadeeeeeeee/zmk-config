@@ -173,6 +173,46 @@
             bindings = <&question_mark>;
             key-positions = <37 38 25>;
         };
+
+        right_alt_left {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <18 42>;
+        };
+
+        right_alt_right {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <23 55>;
+        };
+
+        up_arrow {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <17 32 17>;
+        };
+
+        down_arrow {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <17 30>;
+        };
+
+        left_arrow {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <30 31>;
+        };
+
+        right_arrow {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <32 31>;
+        };
+
+        right_ctrl_left {
+            bindings = <&kp RCTRL>;
+            key-positions = <18 28>;
+        };
+
+        right_ctrl_right {
+            bindings = <&kp RCTRL>;
+            key-positions = <55 23>;
+        };
     };
 
     macros {
@@ -259,6 +299,24 @@
                 <&macro_release>,
                 <&kp LEFT_ALT &kp TAB>;
         };
+
+        bang_mark: bang_mark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp KP_NUMBER_6>,
+                <&macro_press>,
+                <&kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp KP_NUMBER_3 &kp LEFT_ALT>;
+
+            label = "BANG_MARK";
+        };
     };
 
     keymap {
@@ -280,11 +338,11 @@
  */
 
             bindings = <
-&none         &kp N1     &kp N2  &kp N3          &kp N4  &kp N5  &kp MINUS                                      &kp EQUAL      &kp N6  &kp N7  &kp N8             &kp N9    &kp N0             &kp RIGHT_BRACKET
-&kp LWIN      &kp Q      &kp W   &kp E           &kp R   &kp T   &kp GRAVE                                      &kp BACKSLASH  &kp Y   &kp U   &kp I              &kp O     &kp P              &kp LEFT_BRACKET
-&kp LCTRL     &kp A      &kp S   &kp D           &kp F   &kp G   &kp HOME                                       &kp END        &kp H   &kp J   &kp K              &kp L     &kp SEMICOLON      &kp SQT
-&kp LEFT_ALT  &kp Z      &kp X   &kp C           &kp V   &kp B                   &none           &cons                         &kp N   &kp M   &kp COMMA          &kp DOT   &kp SLASH          &kp RSHFT
-&none         &kp K_APP  &none   &kp LEFT_SHIFT  &mo 1           &lt 3 CAPSLOCK  &kp LEFT_SHIFT  &kp BACKSPACE  &kp SPACE              &mo 2   &lt 3 PRINTSCREEN  &kp LALT  &kp RIGHT_COMMAND  &kp RCTRL
+&none         &kp N1     &kp N2  &kp N3          &kp N4  &kp N5  &kp MINUS                                      &kp EQUAL      &kp N6  &kp N7  &kp N8             &kp N9   &kp N0         &kp RIGHT_BRACKET
+&kp LWIN      &kp Q      &kp W   &kp E           &kp R   &kp T   &kp GRAVE                                      &kp BACKSLASH  &kp Y   &kp U   &kp I              &kp O    &kp P          &kp LEFT_BRACKET
+&kp LCTRL     &kp A      &kp S   &kp D           &kp F   &kp G   &kp HOME                                       &kp END        &kp H   &kp J   &kp K              &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_ALT  &kp Z      &kp X   &kp C           &kp V   &kp B                   &none           &cons                         &kp N   &kp M   &kp COMMA          &kp DOT  &kp SLASH      &kp RSHFT
+&none         &kp K_APP  &none   &kp LEFT_SHIFT  &mo 1           &lt 3 CAPSLOCK  &kp LEFT_SHIFT  &kp BACKSPACE  &kp SPACE              &mo 2   &lt 3 PRINTSCREEN  &none    &none          &none
             >;
         };
 
@@ -302,11 +360,11 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  *//* FIXME boot and reset are not yet locale aware */
             bindings = <
-&kp ESC        &kp F1            &kp F2        &kp F3        &kp F4        &kp F5  &kp F12                                     &kp F11        &kp F6      &kp F7         &kp F8                &kp F9                 &kp F10  &none
-&kp LEFT_WIN   &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &ctrlShiftT                                 &trans         &kp POUND   &kp EXCL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &kp RIGHT_BRACKET
-&kp LCTRL      &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &none   &kp PAGE_UP                                 &kp PAGE_DOWN  &kp DOLLAR  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none
-&kp LEFT_ALT   &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &none                &ext_power EP_ON   &none                      &none       &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &kp RIGHT_SHIFT
-&ctrlShiftEsc  &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                 &kp ENTER    &ext_power EP_OFF  &kp DELETE  &trans                     &trans         &none                 &kp RIGHT_ALT          &none    &kp RCTRL
+&kp ESC        &kp F1            &kp F2        &kp F3        &kp F4        &kp F5  &kp F12                                  &kp F11        &kp F6      &kp F7         &kp F8                &kp F9                 &kp F10  &none
+&kp LEFT_WIN   &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &ctrlShiftT                              &trans         &kp POUND   &kp EXCL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &kp RIGHT_BRACKET
+&kp LCTRL      &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &none   &kp PAGE_UP                              &kp PAGE_DOWN  &kp DOLLAR  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none
+&kp LEFT_ALT   &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &none                &none           &none                      &none       &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &kp RIGHT_SHIFT
+&ctrlShiftEsc  &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                 &kp ENTER    &kp LEFT_SHIFT  &kp DELETE  &trans                     &trans         &none                 &kp RIGHT_ALT          &none    &kp RCTRL
             >;
         };
 
@@ -339,16 +397,6 @@
 &kp LCTRL     &kp F4  &kp F5  &kp F6   &kp F7   &trans   &trans                  &trans  &trans  &trans  &kp KP_N4    &kp KP_N5      &kp KP_N6        &kp KP_PLUS
 &kp LEFT_ALT  &kp F8  &kp F9  &kp F11  &kp F12  &trans           &trans  &trans          &trans  &trans  &kp KP_N1    &kp KP_N2      &kp KP_N3        &kp KP_EQUAL
 &trans        &trans  &trans  &trans   &trans            &trans  &trans  &trans  &trans          &trans  &none        &kp KP_N0      &kp KP_DOT       &kp KP_ENTER
-            >;
-        };
-
-        gaming_layer {
-            bindings = <
-&trans  &trans          &trans          &trans           &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &kp UP_ARROW    &none            &none   &none   &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans           &trans  &trans          &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans           &trans          &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
