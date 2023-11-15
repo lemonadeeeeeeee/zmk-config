@@ -171,7 +171,7 @@
 
         question_mark {
             bindings = <&question_mark>;
-            key-positions = <37 38 25>;
+            key-positions = <37 25>;
         };
 
         right_alt_left {
@@ -313,7 +313,9 @@
                 <&macro_press>,
                 <&kp KP_NUMBER_3>,
                 <&macro_release>,
-                <&kp KP_NUMBER_3 &kp LEFT_ALT>;
+                <&kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "QUESTION_MARK";
         };
