@@ -185,22 +185,22 @@
         };
 
         up_arrow {
-            bindings = <&kp UP>;
+            bindings = <&kp UP_ARROW>;
             key-positions = <17 17 32 30>;
         };
 
         down_arrow {
-            bindings = <&kp DOWN>;
+            bindings = <&kp DOWN_ARROW>;
             key-positions = <45 30 32>;
         };
 
         left_arrow {
-            bindings = <&kp LEFT>;
+            bindings = <&kp LEFT_ARROW>;
             key-positions = <30 17>;
         };
 
         right_arrow {
-            bindings = <&kp RIGHT>;
+            bindings = <&kp RIGHT_ARROW>;
             key-positions = <32 17>;
         };
 
@@ -221,32 +221,37 @@
 
         left_parenthesis {
             bindings = <&left_parenthesis>;
-            key-positions = <63 37>;
+            key-positions = <37 64>;
         };
 
         right_parenthesis {
             bindings = <&right_parenthesis>;
-            key-positions = <63 38>;
+            key-positions = <38 64>;
         };
 
         left_bracket {
             bindings = <&left_bracket>;
-            key-positions = <63 23>;
+            key-positions = <23 64>;
         };
 
         right_bracket {
             bindings = <&right_bracket>;
-            key-positions = <63 24>;
+            key-positions = <24 64>;
         };
 
         left_brace {
             bindings = <&left_brace>;
-            key-positions = <63 51>;
+            key-positions = <51 64>;
         };
 
         right_brace {
             bindings = <&right_brace>;
-            key-positions = <63 52>;
+            key-positions = <52 64>;
+        };
+
+        cse {
+            bindings = <&ctrlShiftEsc>;
+            key-positions = <30 17 45>;
         };
     };
 
