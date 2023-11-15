@@ -389,7 +389,7 @@
                 <&macro_release>,
                 <&kp KP_NUMBER_4>,
                 <&macro_press>,
-                <&kp N1>,
+                <&kp KP_N1>,
                 <&macro_release>,
                 <&kp KP_N1 &kp LEFT_ALT>;
 
@@ -403,13 +403,13 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_NUMBER_2>,
+                <&kp KP_N9>,
                 <&macro_release>,
-                <&kp KP_NUMBER_2>,
+                <&kp KP_N9>,
                 <&macro_press>,
-                <&kp KP_NUMBER_8>,
+                <&kp KP_N1>,
                 <&macro_release>,
-                <&kp KP_NUMBER_8 &kp LEFT_ALT>;
+                <&kp KP_N1 &kp LEFT_ALT>;
 
             label = "LEFT_BRACKET";
         };
@@ -421,13 +421,13 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_NUMBER_2>,
-                <&macro_release>,
-                <&kp KP_NUMBER_2>,
-                <&macro_press>,
                 <&kp KP_NUMBER_9>,
                 <&macro_release>,
-                <&kp KP_NUMBER_9 &kp LEFT_ALT>;
+                <&kp KP_N9>,
+                <&macro_press>,
+                <&kp KP_N3>,
+                <&macro_release>,
+                <&kp KP_N3 &kp LEFT_ALT>;
 
             label = "RIGHT_BRACKET";
         };
@@ -439,13 +439,17 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_press>,
-                <&kp KP_NUMBER_6>,
+                <&kp KP_N1>,
                 <&macro_release>,
-                <&kp KP_NUMBER_6>,
+                <&kp KP_N1>,
                 <&macro_press>,
-                <&kp KP_NUMBER_0>,
+                <&kp KP_N2>,
                 <&macro_release>,
-                <&kp KP_NUMBER_0 &kp LEFT_ALT>;
+                <&kp KP_NUMBER_2>,
+                <&macro_press>,
+                <&kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp KP_NUMBER_3 &kp LEFT_ALT>;
 
             label = "LEFT_BRACE";
         };
