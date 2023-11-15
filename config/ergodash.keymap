@@ -216,7 +216,7 @@
 
         bang {
             bindings = <&bang_mark>;
-            key-positions = <23 24 39>;
+            key-positions = <23 39>;
         };
 
         left_parenthesis {
