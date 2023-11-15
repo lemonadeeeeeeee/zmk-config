@@ -185,22 +185,22 @@
         };
 
         up_arrow {
-            bindings = <&kp UP_ARROW>;
+            bindings = <&kp UP>;
             key-positions = <17 17 32 30>;
         };
 
         down_arrow {
-            bindings = <&kp DOWN_ARROW>;
+            bindings = <&kp DOWN>;
             key-positions = <45 30 32>;
         };
 
         left_arrow {
-            bindings = <&kp LEFT_ARROW>;
+            bindings = <&kp LEFT>;
             key-positions = <30 17>;
         };
 
         right_arrow {
-            bindings = <&kp RIGHT_ARROW>;
+            bindings = <&kp RIGHT>;
             key-positions = <32 17>;
         };
 
@@ -364,9 +364,9 @@
                 <&macro_release>,
                 <&kp KP_NUMBER_4>,
                 <&macro_press>,
-                <&kp KP_N1>,
+                <&kp KP_NUMBER_0>,
                 <&macro_release>,
-                <&kp KP_NUMBER_1 &kp LEFT_ALT>;
+                <&kp KP_NUMBER_0 &kp LEFT_ALT>;
 
             label = "LEFT_PARENTHESIS";
         };
@@ -382,9 +382,9 @@
                 <&macro_release>,
                 <&kp KP_NUMBER_4>,
                 <&macro_press>,
-                <&kp KP_NUMBER_0>,
+                <&kp N1>,
                 <&macro_release>,
-                <&kp KP_NUMBER_0 &kp LEFT_ALT>;
+                <&kp KP_N1 &kp LEFT_ALT>;
 
             label = "RIGHT_PARENTHESIS";
         };
