@@ -219,11 +219,6 @@
             key-positions = <52 64>;
         };
 
-        cse {
-            bindings = <&ctrlShiftEsc>;
-            key-positions = <30 17 45>;
-        };
-
         insert {
             bindings = <&kp INSERT>;
             key-positions = <64 65>;
