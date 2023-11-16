@@ -134,11 +134,6 @@
             key-positions = <18 17>;
         };
 
-        lang2 {
-            bindings = <&lang2>;
-            key-positions = <23 24>;
-        };
-
         question_mark {
             bindings = <&question_mark>;
             key-positions = <37 25>;
@@ -191,32 +186,32 @@
 
         left_parenthesis {
             bindings = <&left_parenthesis>;
-            key-positions = <37 64>;
+            key-positions = <64 36>;
         };
 
         right_parenthesis {
             bindings = <&right_parenthesis>;
-            key-positions = <38 64>;
+            key-positions = <64 37>;
         };
 
         left_bracket {
             bindings = <&left_bracket>;
-            key-positions = <23 64>;
+            key-positions = <64 22>;
         };
 
         right_bracket {
             bindings = <&right_bracket>;
-            key-positions = <24 64>;
+            key-positions = <64 23>;
         };
 
         left_brace {
             bindings = <&left_brace>;
-            key-positions = <51 64>;
+            key-positions = <64 50>;
         };
 
         right_brace {
             bindings = <&right_brace>;
-            key-positions = <52 64>;
+            key-positions = <64 51>;
         };
 
         insert {
@@ -242,6 +237,11 @@
         end {
             bindings = <&kp END>;
             key-positions = <24 26>;
+        };
+
+        num_lock {
+            bindings = <&kp KP_NUMLOCK>;
+            key-positions = <64 26>;
         };
     };
 
@@ -397,7 +397,7 @@
                 <&macro_release>,
                 <&kp KP_N9>,
                 <&macro_press>,
-                <&kp KP_N1>,
+                <&kp KP_NUMBER_1>,
                 <&macro_release>,
                 <&kp KP_N1 &kp LEFT_ALT>;
 
