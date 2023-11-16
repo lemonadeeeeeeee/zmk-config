@@ -166,7 +166,7 @@
 
         right_arrow {
             bindings = <&kp RIGHT_ARROW>;
-            key-positions = <32 17>;
+            key-positions = <18 33>;
         };
 
         right_ctrl_left {
