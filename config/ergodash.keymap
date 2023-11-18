@@ -161,7 +161,7 @@
 
         left_arrow {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <30 18>;
+            key-positions = <30 17>;
         };
 
         right_arrow {
