@@ -183,7 +183,7 @@
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <51 63>;
             slow-release;
-            require-prior-idle-ms = <1>;
+            require-prior-idle-ms = <0>;
         };
 
         insert {
