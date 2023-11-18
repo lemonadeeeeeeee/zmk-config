@@ -180,9 +180,8 @@
         };
 
         right_braces {
-            bindings = <&kp C_VOLUME_UP>;
+            bindings = <&right_brace>;
             key-positions = <51 63>;
-            slow-release;
             require-prior-idle-ms = <0>;
         };
 
