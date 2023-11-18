@@ -24,7 +24,7 @@
     combos {
         compatible = "zmk,combos";
 
-        space_main {
+        space_mainU {
             bindings = <&kp SPACE>;
             key-positions = <29 30 31 32>;
         };
