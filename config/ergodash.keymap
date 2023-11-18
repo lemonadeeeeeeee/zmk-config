@@ -210,7 +210,7 @@
         };
 
         right_brace {
-            bindings = <&right_brace>;
+            bindings = <&kp C_VOLUME_UP>;
             key-positions = <64 51>;
         };
 
