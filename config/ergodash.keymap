@@ -41,11 +41,6 @@
 
         enter_left {
             bindings = <&kp ENTER>;
-            key-positions = <38 39 40>;
-        };
-
-        enter_right {
-            bindings = <&kp ENTER>;
             key-positions = <32 31 30>;
         };
 
@@ -149,26 +144,6 @@
             key-positions = <23 55>;
         };
 
-        up_arrow {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <16 18>;
-        };
-
-        down_arrow {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <30 31>;
-        };
-
-        left_arrow {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <30 17>;
-        };
-
-        right_arrow {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <18 33>;
-        };
-
         right_ctrl_left {
             bindings = <&kp RCTRL>;
             key-positions = <18 28>;
@@ -186,32 +161,32 @@
 
         left_parenthesis {
             bindings = <&left_parenthesis>;
-            key-positions = <64 36>;
+            key-positions = <36 63>;
         };
 
         right_parenthesis {
             bindings = <&right_parenthesis>;
-            key-positions = <64 37>;
+            key-positions = <37 63>;
         };
 
         left_bracket {
             bindings = <&left_bracket>;
-            key-positions = <64 22>;
+            key-positions = <22 63>;
         };
 
         right_bracket {
             bindings = <&right_bracket>;
-            key-positions = <64 23>;
+            key-positions = <23 63>;
         };
 
         left_brace {
             bindings = <&left_brace>;
-            key-positions = <64 50>;
+            key-positions = <50 63>;
         };
 
-        right_brace {
+        right_braces {
             bindings = <&kp C_VOLUME_UP>;
-            key-positions = <64 51>;
+            key-positions = <51 63>;
         };
 
         insert {
@@ -242,6 +217,11 @@
         num_lock {
             bindings = <&kp KP_NUMLOCK>;
             key-positions = <64 26>;
+        };
+
+        layer_3 {
+            bindings = <&mo 3>;
+            key-positions = <46 60>;
         };
     };
 
@@ -486,11 +466,11 @@
  */
 
             bindings = <
-&none         &kp N1     &kp N2  &kp N3          &kp N4  &kp N5  &kp MINUS                                      &kp EQUAL      &kp N6  &kp N7        &kp N8             &kp N9          &kp N0         &kp RIGHT_BRACKET
-&kp LWIN      &kp Q      &kp W   &kp E           &kp R   &kp T   &kp GRAVE                                      &kp BACKSLASH  &kp Y   &kp U         &kp I              &kp O           &kp P          &kp LEFT_BRACKET
-&kp LCTRL     &kp A      &kp S   &kp D           &kp F   &kp G   &kp HOME                                       &kp END        &kp H   &kp J         &kp K              &kp L           &kp SEMICOLON  &kp SQT
-&kp LEFT_ALT  &kp Z      &kp X   &kp C           &kp V   &kp B                   &none           &cons                         &kp N   &kp M         &kp COMMA          &kp DOT         &kp SLASH      &lang
-&none         &kp K_APP  &none   &kp LEFT_SHIFT  &mo 1           &lt 3 CAPSLOCK  &kp LEFT_SHIFT  &kp BACKSPACE  &kp SPACE              &lt 2 ESCAPE  &lt 3 PRINTSCREEN  &kp DOWN_ARROW  &none          &none
+&none         &kp N1     &kp N2  &kp N3          &kp N4   &kp N5  &kp MINUS                                 &kp EQUAL      &kp N6  &kp N7        &kp N8             &kp N9          &kp N0         &kp RIGHT_BRACKET
+&kp LWIN      &kp Q      &kp W   &kp E           &kp R    &kp T   &kp GRAVE                                 &kp BACKSLASH  &kp Y   &kp U         &kp I              &kp O           &kp P          &kp LEFT_BRACKET
+&kp LCTRL     &kp A      &kp S   &kp D           &kp F    &kp G   &kp HOME                                  &kp END        &kp H   &kp J         &kp K              &kp L           &kp SEMICOLON  &kp SQT
+&kp LEFT_ALT  &kp Z      &kp X   &kp C           &lt 4 V  &kp B              &none           &cons                         &kp N   &kp M         &kp COMMA          &kp DOT         &kp SLASH      &lang
+&none         &kp K_APP  &none   &kp LEFT_SHIFT  &mo 1            &kp SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER              &lt 2 ESCAPE  &lt 3 PRINTSCREEN  &kp DOWN_ARROW  &none          &none
             >;
         };
 
@@ -545,6 +525,16 @@
 &kp LCTRL     &kp F4  &kp F5  &kp F6   &kp F7   &trans   &trans                  &trans  &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DOT
 &kp LEFT_ALT  &kp F8  &kp F9  &kp F11  &kp F12  &trans           &trans  &trans          &kp KP_PLUS      &kp KP_ENTER  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
 &trans        &trans  &trans  &trans   &trans            &trans  &trans  &trans  &trans                   &none         &none      &trans     &trans     &trans
+            >;
+        };
+
+        arrows {
+            bindings = <
+&trans  &trans          &trans          &trans          &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &kp UP_ARROW    &trans          &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp LEFT_ARROW  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans          &trans  &trans          &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans          &trans          &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
