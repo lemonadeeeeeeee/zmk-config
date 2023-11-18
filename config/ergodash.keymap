@@ -377,7 +377,7 @@
                 <&macro_release>,
                 <&kp KP_N9>,
                 <&macro_press>,
-                <&kp KP_NUMBER_1>,
+                <&kp KP_N1>,
                 <&macro_release>,
                 <&kp KP_N1 &kp LEFT_ALT>;
 
@@ -415,11 +415,11 @@
                 <&macro_press>,
                 <&kp KP_N2>,
                 <&macro_release>,
-                <&kp KP_NUMBER_2>,
+                <&kp KP_N2>,
                 <&macro_press>,
-                <&kp KP_NUMBER_3>,
+                <&kp KP_N3>,
                 <&macro_release>,
-                <&kp KP_NUMBER_3 &kp LEFT_ALT>;
+                <&kp KP_N3 &kp LEFT_ALT>;
 
             label = "LEFT_BRACE";
         };
@@ -437,11 +437,11 @@
                 <&macro_press>,
                 <&kp KP_N2>,
                 <&macro_release>,
-                <&kp KP_NUMBER_2>,
+                <&kp KP_N2>,
                 <&macro_press>,
-                <&kp KP_NUMBER_5>,
+                <&kp KP_N5>,
                 <&macro_release>,
-                <&kp KP_NUMBER_5 &kp LEFT_ALT>;
+                <&kp KP_N5 &kp LEFT_ALT>;
 
             label = "RIGHT_BRACE";
         };
