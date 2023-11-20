@@ -56,7 +56,7 @@
 
         unserscore {
             bindings = <&kp UNDER>;
-            key-positions = <50 51>;
+            key-positions = <52 50>;
         };
 
         equal {
