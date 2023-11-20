@@ -299,6 +299,42 @@
 
             label = "BANG_MARK";
         };
+
+        dot: dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp KP_N4>,
+                <&macro_press>,
+                <&kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp KP_NUMBER_6 &kp LEFT_ALT>;
+
+            label = "DOT";
+        };
+
+        comma: comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp KP_N4>,
+                <&macro_press>,
+                <&kp KP_N4>,
+                <&macro_release>,
+                <&kp KP_N4 &kp LEFT_ALT>;
+
+            label = "COMMA";
+        };
     };
 
     keymap {
@@ -345,7 +381,7 @@
 &none         &kp F1            &kp F2        &kp F3        &kp F4        &kp F5           &none                                    &none   &none         &none          &none                 &none                  &none              &none
 &kp LEFT_WIN  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp KP_MULTIPLY  &ctrlShiftT                              &trans  &kp QUESTION  &kp EXCL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT        &kp POUND
 &kp LCTRL     &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp PLUS         &none                                    &none   &kp COLON     &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE   &kp GRAVE
-&kp LEFT_ALT  &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &kp UNDERSCORE                &none           &none               &kp DOT       &kp COMMA      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp RIGHT_SHIFT
+&kp LEFT_ALT  &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &kp UNDERSCORE                &none           &none               &dot          &comma         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp RIGHT_SHIFT
 &none         &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                          &kp ENTER    &kp LEFT_SHIFT  &kp DELETE  &trans                &trans         &none                 &kp RIGHT_ALT          &none              &kp RCTRL
             >;
         };
