@@ -150,7 +150,7 @@
         };
 
         left_parenthesis {
-            bindings = <&kp A>;
+            bindings = <&left_parenthesis>;
             key-positions = <38 23>;
         };
 
@@ -166,7 +166,7 @@
 
         right_bracket {
             bindings = <&right_bracket>;
-            key-positions = <63 38 36>;
+            key-positions = <38 36>;
         };
 
         left_brace {
@@ -175,7 +175,7 @@
         };
 
         right_brace {
-            bindings = <&kp B>;
+            bindings = <&right_brace>;
             key-positions = <38 50>;
         };
 
