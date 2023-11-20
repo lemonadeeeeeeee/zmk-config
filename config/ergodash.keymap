@@ -156,32 +156,32 @@
 
         left_parenthesis {
             bindings = <&kp A>;
-            key-positions = <63 22>;
+            key-positions = <38 23>;
         };
 
         right_parenthesis {
             bindings = <&right_parenthesis>;
-            key-positions = <63 23>;
+            key-positions = <38 22>;
         };
 
         left_bracket {
             bindings = <&left_bracket>;
-            key-positions = <63 36>;
+            key-positions = <38 37>;
         };
 
         right_bracket {
             bindings = <&right_bracket>;
-            key-positions = <63 37>;
+            key-positions = <63 38 36>;
         };
 
         left_brace {
             bindings = <&left_brace>;
-            key-positions = <63 50>;
+            key-positions = <38 51>;
         };
 
         right_brace {
             bindings = <&kp B>;
-            key-positions = <63 51>;
+            key-positions = <38 50>;
         };
 
         insert {
