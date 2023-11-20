@@ -29,11 +29,6 @@
             key-positions = <29 30 31 32>;
         };
 
-        dot {
-            bindings = <&kp KP_DOT>;
-            key-positions = <39 40>;
-        };
-
         enter_left {
             bindings = <&kp ENTER>;
             key-positions = <32 31 30>;
@@ -139,16 +134,6 @@
             key-positions = <23 24>;
         };
 
-        left_bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <38 37>;
-        };
-
-        right_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <37 24>;
-        };
-
         left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <38 51>;
@@ -166,22 +151,22 @@
 
         page_up {
             bindings = <&kp PAGE_UP>;
-            key-positions = <36 39>;
+            key-positions = <43 46>;
         };
 
         page_down {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <50 53>;
+            key-positions = <32 29>;
         };
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <24 26>;
+            key-positions = <16 17>;
         };
 
         end {
             bindings = <&kp END>;
-            key-positions = <27 25>;
+            key-positions = <30 31>;
         };
 
         num_lock {
@@ -334,6 +319,60 @@
                 <&kp KP_N4 &kp LEFT_ALT>;
 
             label = "COMMA";
+        };
+
+        left_bracket: left_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp KP_N9>,
+                <&macro_press>,
+                <&kp KP_N1>,
+                <&macro_release>,
+                <&kp KP_N1 &kp LEFT_ALT>;
+
+            label = "LEFT_BRACKET";
+        };
+
+        right_bracket: right_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp KP_N9>,
+                <&macro_press>,
+                <&kp KP_N3>,
+                <&macro_release>,
+                <&kp KP_N3 &kp LEFT_ALT>;
+
+            label = "RIGHT_BRACKET";
+        };
+
+        left_brace: left_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_N1>,
+                <&macro_release>,
+                <&kp KP_N1>,
+                <&macro_press>,
+                <&kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp KP_NUMBER_2 &kp LEFT_ALT &kp>;
+
+            label = "LEFT_BRACE";
         };
     };
 
