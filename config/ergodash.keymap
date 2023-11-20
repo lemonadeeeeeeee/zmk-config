@@ -156,7 +156,7 @@
 
         right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <38 22>;
+            key-positions = <23 24>;
         };
 
         left_bracket {
@@ -166,7 +166,7 @@
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <38 36>;
+            key-positions = <37 24>;
         };
 
         left_brace {
@@ -176,7 +176,7 @@
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <38 50>;
+            key-positions = <51 24>;
         };
 
         insert {
@@ -318,122 +318,6 @@
                 <&kp KP_NUMBER_3 &kp LEFT_ALT>;
 
             label = "BANG_MARK";
-        };
-
-        left_parenthesis: left_parenthesis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp KP_NUMBER_4>,
-                <&macro_press>,
-                <&kp KP_NUMBER_0>,
-                <&macro_release>,
-                <&kp KP_NUMBER_0 &kp LEFT_ALT>;
-
-            label = "LEFT_PARENTHESIS";
-        };
-
-        right_parenthesis: right_parenthesis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp KP_NUMBER_4>,
-                <&macro_press>,
-                <&kp KP_N1>,
-                <&macro_release>,
-                <&kp KP_N1 &kp LEFT_ALT>;
-
-            label = "RIGHT_PARENTHESIS";
-        };
-
-        left_bracket: left_bracket {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp KP_N9>,
-                <&macro_release>,
-                <&kp KP_N9>,
-                <&macro_press>,
-                <&kp KP_N1>,
-                <&macro_release>,
-                <&kp KP_N1 &kp LEFT_ALT>;
-
-            label = "LEFT_BRACKET";
-        };
-
-        right_bracket: right_bracket {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp KP_NUMBER_9>,
-                <&macro_release>,
-                <&kp KP_N9>,
-                <&macro_press>,
-                <&kp KP_N3>,
-                <&macro_release>,
-                <&kp KP_N3 &kp LEFT_ALT>;
-
-            label = "RIGHT_BRACKET";
-        };
-
-        left_brace: left_brace {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp KP_N1>,
-                <&macro_release>,
-                <&kp KP_N1>,
-                <&macro_press>,
-                <&kp KP_N2>,
-                <&macro_release>,
-                <&kp KP_N2>,
-                <&macro_press>,
-                <&kp KP_N3>,
-                <&macro_release>,
-                <&kp KP_N3 &kp LEFT_ALT>;
-
-            label = "LEFT_BRACE";
-        };
-
-        right_brace: right_brace {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp KP_N1>,
-                <&macro_release>,
-                <&kp KP_N1>,
-                <&macro_press>,
-                <&kp KP_N2>,
-                <&macro_release>,
-                <&kp KP_N2>,
-                <&macro_press>,
-                <&kp KP_N5>,
-                <&macro_release>,
-                <&kp KP_N5 &kp LEFT_ALT>;
-
-            label = "RIGHT_BRACE";
         };
     };
 
