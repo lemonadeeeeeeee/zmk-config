@@ -421,6 +421,78 @@
 
             label = "DOUBLE_QUOTE";
         };
+
+        colon: colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_N5>,
+                <&macro_release>,
+                <&kp KP_N5>,
+                <&macro_press>,
+                <&kp KP_N8>,
+                <&macro_release>,
+                <&kp KP_N8 &kp LEFT_ALT>;
+
+            label = "COLON";
+        };
+
+        semicolon: semicolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_N5>,
+                <&macro_release>,
+                <&kp KP_N5>,
+                <&macro_press>,
+                <&kp KP_N9>,
+                <&macro_release>,
+                <&kp KP_N9 &kp LEFT_ALT>;
+
+            label = "SEMICOLON";
+        };
+
+        left_parenthesis: left_parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_N4>,
+                <&macro_release>,
+                <&kp KP_N4>,
+                <&macro_press>,
+                <&kp KP_N0>,
+                <&macro_release>,
+                <&kp KP_N0 &kp LEFT_ALT>;
+
+            label = "LEFT_PARENTHESIS";
+        };
+
+        right_parenthesis: right_parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp KP_N4>,
+                <&macro_release>,
+                <&kp KP_N4>,
+                <&macro_press>,
+                <&kp KP_N1>,
+                <&macro_release>,
+                <&kp KP_N1 &kp LEFT_ALT>;
+
+            label = "RIGHT_PARENTHESIS";
+        };
     };
 
     keymap {
@@ -464,11 +536,11 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  *//* FIXME boot and reset are not yet locale aware */
             bindings = <
-&none         &kp F1            &kp F2        &kp F3        &kp F4        &kp F5           &none                                    &none   &none         &none          &none                 &none                  &none          &none
-&kp LEFT_WIN  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp KP_MULTIPLY  &ctrlShiftT                              &trans  &kp QUESTION  &kp EXCL       &left_bracket         &right_bracket         &kp AMPERSAND  &kp POUND
-&kp LCTRL     &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp PLUS         &none                                    &none   &kp COLON     &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &single_quote  &kp GRAVE
-&kp LEFT_ALT  &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &kp UNDERSCORE                &none           &none               &dot          &comma         &left_brace           &right_brace           &double_quote  &kp RIGHT_SHIFT
-&none         &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                          &kp ENTER    &kp LEFT_SHIFT  &kp DELETE  &trans                &trans         &none                 &kp RIGHT_ALT          &none          &kp RCTRL
+&none         &kp F1            &kp F2        &kp F3        &kp F4        &kp F5           &none                                    &none   &none         &none       &none              &none               &none          &none
+&kp LEFT_WIN  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp KP_MULTIPLY  &ctrlShiftT                              &trans  &kp QUESTION  &kp EXCL    &left_bracket      &right_bracket      &kp AMPERSAND  &kp POUND
+&kp LCTRL     &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp PLUS         &none                                    &none   &colon        &semicolon  &left_parenthesis  &right_parenthesis  &single_quote  &kp GRAVE
+&kp LEFT_ALT  &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &kp UNDERSCORE                &none           &none               &dot          &comma      &left_brace        &right_brace        &double_quote  &kp RIGHT_SHIFT
+&none         &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                          &kp ENTER    &kp LEFT_SHIFT  &kp DELETE  &trans                &trans      &none              &kp RIGHT_ALT       &none          &kp RCTRL
             >;
         };
 
