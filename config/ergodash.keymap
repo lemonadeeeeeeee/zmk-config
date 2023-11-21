@@ -163,6 +163,11 @@
             bindings = <&mo 3>;
             key-positions = <46 60>;
         };
+
+        delete_1 {
+            bindings = <&kp DELETE>;
+            key-positions = <31 17>;
+        };
     };
 
     macros {
@@ -578,11 +583,11 @@
 
         arrows {
             bindings = <
-&trans      &trans          &trans          &trans           &trans  &trans  &trans                  &trans  &trans       &trans         &trans            &trans     &trans  &trans
-&trans      &trans          &kp UP_ARROW    &trans           &trans  &trans  &trans                  &trans  &trans       &trans         &trans            &trans     &trans  &trans
-&trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans                  &trans  &trans       &kp SLASH      &kp BACKSLASH     &kp PIPE   &trans  &trans
-&kp ESCAPE  &kp ESC         &trans          &trans           &trans  &trans          &trans  &trans          &kp AT_SIGN  &kp LESS_THAN  &kp GREATER_THAN  &kp CARET  &trans  &trans
-&trans      &trans          &trans          &trans           &trans          &trans  &trans  &trans  &trans               &trans         &trans            &trans     &trans  &trans
+&trans      &trans   &trans          &trans          &trans           &trans  &trans                  &trans  &trans       &trans         &trans            &trans     &trans  &trans
+&trans      &trans   &trans          &kp UP_ARROW    &trans           &trans  &trans                  &trans  &trans       &trans         &trans            &trans     &trans  &trans
+&trans      &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans                  &trans  &trans       &kp SLASH      &kp BACKSLASH     &kp PIPE   &trans  &trans
+&kp ESCAPE  &kp ESC  &trans          &trans          &trans           &trans          &trans  &trans          &kp AT_SIGN  &kp LESS_THAN  &kp GREATER_THAN  &kp CARET  &trans  &trans
+&trans      &trans   &trans          &trans          &trans                   &trans  &trans  &trans  &trans               &trans         &trans            &trans     &trans  &trans
             >;
         };
     };
