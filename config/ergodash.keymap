@@ -539,11 +539,11 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  *//* FIXME boot and reset are not yet locale aware */
             bindings = <
-&none         &kp F1            &kp F2        &kp F3        &kp F4        &kp F5           &none                                    &none   &none         &none       &none              &none               &none          &none
-&kp LEFT_WIN  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp KP_MULTIPLY  &ctrlShiftT                              &trans  &kp QUESTION  &kp EXCL    &left_bracket      &right_bracket      &kp AMPERSAND  &kp POUND
-&kp LCTRL     &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp PLUS         &none                                    &none   &colon        &semicolon  &left_parenthesis  &right_parenthesis  &single_quote  &kp GRAVE
-&kp LEFT_ALT  &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &kp UNDERSCORE                &none           &none               &dot          &comma      &left_brace        &right_brace        &double_quote  &kp RIGHT_SHIFT
-&none         &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                          &kp ENTER    &kp LEFT_SHIFT  &kp DELETE  &trans                &trans      &none              &kp RIGHT_ALT       &none          &kp RCTRL
+&none         &kp F1            &kp F2        &kp F3        &kp F4        &kp F5           &none                                    &none   &none           &none           &none              &none               &none          &none
+&kp LEFT_WIN  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp KP_MULTIPLY  &ctrlShiftT                              &trans  &question_mark  &question_mark  &left_bracket      &right_bracket      &kp AMPERSAND  &kp POUND
+&kp LCTRL     &kp N5            &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp PLUS         &none                                    &none   &colon          &semicolon      &left_parenthesis  &right_parenthesis  &single_quote  &kp GRAVE
+&kp LEFT_ALT  &kp N9            &kp N0        &kp MINUS     &kp EQUAL     &kp UNDERSCORE                &none           &none               &dot            &comma          &left_brace        &right_brace        &double_quote  &kp RIGHT_SHIFT
+&none         &kp LEFT_COMMAND  &trans        &kp LEFT_ALT  &mo 1                          &kp ENTER    &kp LEFT_SHIFT  &kp DELETE  &trans                  &trans          &none              &kp RIGHT_ALT       &none          &kp RCTRL
             >;
         };
 
