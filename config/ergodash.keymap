@@ -552,7 +552,7 @@
 &kp A         &kp A         &kp A            &kp A            &kp A              &kp A  &kp A                            &kp A      &kp A  &kp A              &kp A              &kp A             &kp A                 &kp A
 &kp LWIN      &kp Q         &kp W            &kp E            &kp R              &kp T  &kp A                            &kp A      &kp Y  &kp U              &kp I              &kp O             &kp P                 &kp LEFT_BRACKET
 &kp LCTRL     &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_WIN D  &hml LEFT_SHIFT F  &kp G  &kp A                            &kp A      &kp H  &hmr LEFT_SHIFT J  &hmr RIGHT_WIN K   &hmr RIGHT_ALT L  &hmr RCTRL SEMICOLON  &kp SQT
-&kp LEFT_ALT  &lt 4 Z       &kp X            &kp C            &kp V              &kp B             &none  &cons                     &kp N  &kp M              &kp COMMA          &kp DOT           &kp SLASH             &lt 2 CAPSLOCK
+&kp LEFT_ALT  &lt 4 Z       &kp X            &kp C            &kp V              &kp B             &kp A  &kp A                     &kp N  &kp M              &kp COMMA          &kp DOT           &kp SLASH             &lt 2 CAPSLOCK
 &kp A         &kp A         &kp A            &kp A            &mo 1                     &kp SPACE  &mo 3  &kp BACKSPACE  &kp ENTER         &kp TAB            &lt 3 PRINTSCREEN  &kp A             &kp A                 &kp A
             >;
         };
