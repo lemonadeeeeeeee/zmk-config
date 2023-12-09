@@ -613,11 +613,11 @@
 
         arrows {
             bindings = <
-&trans      &trans     &trans          &trans          &trans           &trans      &trans                     &trans  &trans    &trans         &trans            &trans     &trans  &trans
-&trans      &trans     &trans          &kp UP_ARROW    &trans           &trans      &trans                     &trans  &trans    &trans         &trans            &trans     &trans  &trans
-&trans      &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans      &trans                     &trans  &trans    &kp SLASH      &kp BACKSLASH     &kp PIPE   &trans  &trans
-&kp ESCAPE  &kp LSHFT  &trans          &trans          &trans           &kp ESCAPE             &trans  &trans          &kp HASH  &kp LESS_THAN  &kp GREATER_THAN  &kp CARET  &trans  &trans
-&trans      &trans     &trans          &trans          &trans                       &kp LCTRL  &trans  &trans  &trans            &trans         &trans            &trans     &trans  &trans
+&trans  &trans        &trans          &trans          &trans           &trans  &trans                          &trans  &trans    &trans         &trans            &trans     &trans  &trans
+&trans  &trans        &trans          &kp UP_ARROW    &trans           &trans  &trans                          &trans  &trans    &trans         &trans            &trans     &trans  &trans
+&trans  &kp LEFT_ALT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans                          &trans  &trans    &kp SLASH      &kp BACKSLASH     &kp PIPE   &trans  &trans
+&trans  &kp LCTRL     &trans          &kp ESCAPE      &kp LEFT_WIN     &trans                  &trans  &trans          &kp HASH  &kp LESS_THAN  &kp GREATER_THAN  &kp CARET  &trans  &trans
+&trans  &trans        &trans          &trans          &trans                   &kp LEFT_SHIFT  &trans  &trans  &trans            &trans         &trans            &trans     &trans  &trans
             >;
         };
     };
