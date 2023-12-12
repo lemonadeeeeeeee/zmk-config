@@ -41,6 +41,7 @@
                 <&macro_release>,
                 <&kp SPACE &kp LCTRL>;
         };
+
         ctrlShiftT: ctrlShiftT {
             compatible = "zmk,behavior-macro";
             label = "ctrlShiftT";
@@ -51,6 +52,7 @@
                 <&macro_release>,
                 <&kp LCTRL &kp LEFT_SHIFT &kp T>;
         };
+
         ctrlShiftEsc: ctrlShiftEsc {
             compatible = "zmk,behavior-macro";
             label = "ctrlShiftEsc";
@@ -61,6 +63,7 @@
                 <&macro_release>,
                 <&kp LCTRL &kp LEFT_SHIFT &kp ESC>;
         };
+
         lang: lang {
             compatible = "zmk,behavior-macro";
             label = "lang";
@@ -148,8 +151,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp KP_NLCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp KP_N7    &kp KP_N8      &kp KP_N9        &kp KP_MINUS
-&trans  &kp S   &kp T   &kp R   &kp A   &trans  &trans                  &trans  &trans  &trans  &kp KP_N4    &kp KP_N5      &kp KP_N6        &kp KP_PLUS
-&trans  &kp O   &kp I   &kp Y   &kp E   &trans          &trans  &trans          &trans  &trans  &kp KP_N1    &kp KP_N2      &kp KP_N3        &kp KP_EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp KP_N4    &kp KP_N5      &kp KP_N6        &kp KP_PLUS
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans          &trans  &trans  &kp KP_N1    &kp KP_N2      &kp KP_N3        &kp KP_EQUAL
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &none        &kp KP_N0      &kp KP_DOT       &kp KP_ENTER
             >;
         };
