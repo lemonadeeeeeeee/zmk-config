@@ -120,7 +120,7 @@
 &kp ESC         &kp F1             &kp F2           &kp F3          &kp F4            &kp F5          &kp F12                                &kp F11        &kp F6  &kp F7         &kp F8                &kp F9                 &kp F10  &none
 &ctrlShiftEsc   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp UP_ARROW    &kp C_PLAY_PAUSE  &kp C_NEXT      &ctrlShiftT                            &trans         &none   &none          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &none
 &kp LCTRL       &kp C_MUTE         &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp C_PREVIOUS  &kp PAGE_UP                            &kp PAGE_DOWN  &none   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &kp APOSTROPHE
-&kp LEFT_SHIFT  &none              &none            &none           &none             &to 4                        &ext_power EP_ON   &none                 &none   &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &none              &none            &none           &none             &trans                       &ext_power EP_ON   &none                 &none   &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &kp RIGHT_SHIFT
 &trans          &kp LEFT_COMMAND   &trans           &kp LEFT_ALT    &mo 1                             &kp ENTER    &ext_power EP_OFF  &none  &trans                 &trans         &none                 &kp RIGHT_ALT          &none    &kp RCTRL
             >;
         };
@@ -140,7 +140,7 @@
  *//* FIXME boot and reset are not yet locale aware */
             bindings = <
 &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4       &none  &bt BT_CLR                  &none          &none  &none           &none           &none            &none       &none
-&out OUT_BLE    &ext_power EP_OFF  &mwh SCROLL_LEFT  &mwh SCROLL_UP    &mwh SCROLL_RIGHT  &none  &none                       &none          &kp A  &none           &mmv MOVE_UP    &none            &none       &none
+&out OUT_BLE    &ext_power EP_OFF  &mwh SCROLL_LEFT  &mwh SCROLL_UP    &mwh SCROLL_RIGHT  &none  &none                       &none          &none  &none           &mmv MOVE_UP    &none            &none       &none
 &out OUT_USB    &ext_power EP_ON   &mkp MB2          &mwh SCROLL_DOWN  &mkp MB1           &none  &kp PAGE_UP                 &kp PAGE_DOWN  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none       &none
 &kp LEFT_SHIFT  &gresc             &none             &mkp MB3          &none              &none               &none   &none                 &none  &none           &none           &bootloader      &sys_reset  &kp RIGHT_SHIFT
 &trans          &none              &none             &trans            &trans                    &none        &trans  &none  &kp SPACE             &trans          &none           &none            &none       &trans
@@ -154,26 +154,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp KP_N4    &kp KP_N5      &kp KP_N6        &kp KP_PLUS
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans          &trans  &trans  &kp KP_N1    &kp KP_N2      &kp KP_N3        &kp KP_EQUAL
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &none        &kp KP_N0      &kp KP_DOT       &kp KP_ENTER
-            >;
-        };
-
-        gayming_layer {
-            bindings = <
-&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &none                        &none  &none  &none  &none  &none  &none  &none
-&kp TAB     &none         &kp W         &kp E         &kp R         &none   &none                        &none  &none  &none  &none  &none  &none  &none
-&kp CLCK    &kp A         &kp S         &kp D         &none         &kp G   &to 0                        &none  &none  &none  &none  &none  &none  &none
-&none       &none         &none         &kp V         &none         &kp B              &none      &none         &none  &none  &none  &none  &none  &none
-&none       &none         &none         &kp LEFT_ALT  &mo 1                 &kp LCTRL  &kp LCTRL  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        num {
-            bindings = <
-&trans  &trans  &trans        &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans        &trans                &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
